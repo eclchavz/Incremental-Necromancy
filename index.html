@@ -7,9 +7,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="clickbutton" onclick="add()">Add 1</button>
-
-        <p id="clickcount">Clicks: 0</p>
+        <h1>Incremental Necromancy</h1>
+        <p>--------------------------------------------------</p>
+        <h2>Corpses: <span id="corpses">5</span></h2>
+        <h2>Mana: <span id="mana">50</span></h2>
+        <h2>Ghouls: <span id="ghouls">0</span></h2>
+        <h2>Apprentices: <span id="apprentices">0</span></h2>
+        <h2>Killing Fields: <span id="killingFields">1</span></h2>
+        <p>--------------------------------------------------</p>
+        <button onclick="buyGhoul()" type="button">Costs <span id="ghoulCostMana">15</span> mana and 1 corpse<br>Create Ghoul</button>
+        <button onclick="buyApprentice()" type="button">Costs <span id="apprenticeCostMana">100</span> mana, <span id="apprenticeCostGhouls">10</span> ghouls, and 1 corpse<br>Train Apprentice</button>
     </body>
     <script src="main.js"></script>
 </html>
